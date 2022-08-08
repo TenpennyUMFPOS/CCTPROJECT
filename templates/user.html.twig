@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}CCT{% endblock %}</title>
+        <link rel="icon" src="{{ asset('build/images/logoothers/logo2.png') }}">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <style>
+        body {
+            display:flex;
+            flex-direction:column;
+        }
+    </style>
+    
+
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{path('app_user') }}">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ path('app_mycars') }}">
+          <i class="ri-car-line"></i>
+          <span>My cars</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ path('app_search_mechanics') }}">
+          <i class="bi bi-tools"></i>
+          <span>Search for mechanics</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ path('app_messages') }}">
+          <i class="bi bi-card-checklist"></i>
+          <span>courier service</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ path('received') }}">
+          <i class="bi bi-mailbox"></i>
+          <span>MailBox</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ path('premium') }}">
+          <i class="bi bi-shield-check"></i>
+          <span>Get CCT Premium</span>
+        </a>
+      </li>
+
+
+      
+
+
+
+
+
+   >
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+    
+      {% block body %}
+      {% endblock %}
+
+
+
+       <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Car Component Tool</span></strong>. All Rights Reserved W.A.E
+    </div>
+    </div>
+  </footer><!-- End Footer -->
+</html>

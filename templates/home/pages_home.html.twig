@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+<header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+          <a href="#" class="logo d-flex align-items-center">
+            <span class="d-none d-lg-block titleP" >CarComponentTool</span>
+          </a>
+          
+        </div><!-- End Logo -->
+    
+       
+    
+        <nav class="header-nav ms-auto">
+          <ul class="d-flex align-items-center">
+    
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link nav-icon search-bar-toggle " href="#">
+                <i class="bi bi-search"></i>
+              </a>
+            </li><!-- End Search Icon-->
+            
+            <li class="nav-item dropdown pe-3 newhere">
+    
+              <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                
+                <span class="d-none d-md-block dropdown-toggle ps-2 nw">New Here?</span>
+              </a><!-- End Profile Iamge Icon -->
+    
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="{{path('app_login')}}" >
+                      <i class="bi bi-box-arrow-in-right"></i>
+                      <span>Sign in</span>
+                    </a>
+                  </li>
+    
+                <li>
+               
+    
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="{{path('app_register')}}">
+                    <i class="bi bi-clipboard-check"></i>
+                    <span>Register</span>
+                  </a>
+                </li>
+    
+              </ul><!-- End Profile Dropdown Items -->
+            </li><!-- End Profile Nav -->
+    
+          </ul>
+        </nav><!-- End Icons Navigation -->
+    
+      </header><!-- End Header -->
+      <div  class="default">
+        <div class="title">
+          <span>Convert the right people, with the<br> right 
+            calls-to-action,at the right time. </span>
+            <p>
+            YOUR CAR IS IN SAFE HANDS, 
+You can't find a good mechanic to fix your car ? nor other people who had the same problem as you?
+"CCT"  is your safest option that helps you find the best mechanics for your car ASAP.
+            </p>
+        </div>
+        <div class="defaultimage">
+          <img src="{{ asset('build/images/logoothers/logo2.png') }}" />
+        </div>
+      </div>
+      <div class="col-xl-10" style="margin-left:50px;">
+      
+        <footer id="footerhome" class="footerhome">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Car Component Tool</span></strong>. All Rights Reserved W.A.E
+        </div>
+      </footer><!-- End Footer -->
+    
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+{% endblock %}

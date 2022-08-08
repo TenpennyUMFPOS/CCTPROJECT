@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register
+{% endblock %}
+
+{% block body %}
+
+	<main>
+		<div class="container">
+
+			<section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+							
+							<!-- End Logo -->
+
+							<div class="card mb-3">
+
+								<div class="card-body">
+
+									<div class="pt-4 pb-2">
+										<h5 class="card-title text-center pb-0 fs-4">Create an Account</h5>
+										<p class="text-center small">Enter your personal details to create account</p>
+									</div>
+									<form class="row g-3 needs-validation"{{ form_start(registrationForm) }}
+									
+                                    <div class="col-12">
+                                        
+                                        {{ form_row(registrationForm.fullname) }}
+                                        <div class="invalid-feedback">Please, enter your name!</div>
+                                    </div>
+									
+                                    <div class="col-12">
+                                    
+                                    <label>Email</label>
+									<input type="email" class="form-control" id="yourPassword" required {{ form_widget(registrationForm.email) }}
+                                    <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                                    </div>
+                                    <div class="col-12">
+									{{ form_row(registrationForm.region) }}
+                                    <div class="invalid-feedback">Please, enter your Region!</div>
+                                    </div>
+
+                                    <div class="col-12">
+									<label>Phone</label>
+									
+									{{ form_widget(registrationForm.phone) }}
+                                    <div class="invalid-feedback">Please, enter your name!</div>
+                                    </div>
+
+                                    <div class="col-12">
+									
+									
+									
+									{{ form_row(registrationForm.hereas) }}
+                                    <div class="invalid-feedback">Please, enter your name!</div>
+                                    </div>
+                                    <div class="col-12">
+									{{ form_row(registrationForm.plainPassword, { label: 'Password' }) }}
+                                    <div class="invalid-feedback">Please, enter your name!</div>
+                                    </div>
+                                    <div class="col-12">
+                                    <div class="form-check">
+									{{ form_row(registrationForm.agreeTerms) }}
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+									<button type="submit" class="btn btn-primary w-100">Register</button>
+                                    </div>
+									{{ form_end(registrationForm) }}
+								</div>
+							</div>
+						</div>
+					</section>
+					<div></main>
+				{% endblock %}
