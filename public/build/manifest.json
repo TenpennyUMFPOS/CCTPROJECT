@@ -1,0 +1,18 @@
+{
+  "build/app.css": "/build/app.css",
+  "build/app.js": "/build/app.js",
+  "build/runtime.js": "/build/runtime.js",
+  "build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ar-88c574.js": "/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ar-88c574.js",
+  "build/images/remixicon.svg?t=1590207869815": "/build/images/remixicon.9cedd215.svg",
+  "build/images/boxicons.svg": "/build/images/boxicons.17f6cb4e.svg",
+  "build/fonts/remixicon.eot?t=1590207869815": "/build/fonts/remixicon.5cb99e6c.eot",
+  "build/fonts/remixicon.ttf?t=1590207869815": "/build/fonts/remixicon.f2616f59.ttf",
+  "build/fonts/boxicons.eot": "/build/fonts/boxicons.dfc882ec.eot",
+  "build/fonts/boxicons.woff": "/build/fonts/boxicons.1a7e2e2b.woff",
+  "build/fonts/boxicons.ttf": "/build/fonts/boxicons.22afc8ee.ttf",
+  "build/fonts/remixicon.woff?t=1590207869815": "/build/fonts/remixicon.8d09fa11.woff",
+  "build/fonts/remixicon.woff2?t=1590207869815": "/build/fonts/remixicon.90668f6f.woff2",
+  "build/fonts/bootstrap-icons.woff?": "/build/fonts/bootstrap-icons.38c4d249.woff",
+  "build/fonts/boxicons.woff2": "/build/fonts/boxicons.60f603cc.woff2",
+  "build/fonts/bootstrap-icons.woff2?": "/build/fonts/bootstrap-icons.2b56e79a.woff2"
+}
