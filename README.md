@@ -1,6 +1,6 @@
 This is my second year study project.
 
-It's a website developed using Symfony and PHPMYADMIN for the database.
+It's a website developed using Symfony and MySQL for the database.
 
 There are 2 actors who can access a specific functionality in addition to what all the users can do :
 
