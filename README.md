@@ -1,5 +1,5 @@
 <h1 style="text-decoration: underline">CCT-Project</h1>
-This is my second year study project.
+This is my first year study project.
 
 It's a website developed using Symfony and MySQL for the database.
 
